@@ -48,7 +48,7 @@ public:
 		 return this->nrPersoaneImbarcate;
 	 }
 	 const Autobuz operator=(const Autobuz& y) {
-		 if (this != &y) {
+		 if (this!= &y) {
 			 if (this->producator != NULL)
 				 delete[]this->producator;
 		 }
