@@ -18,5 +18,8 @@
     <ClCompile Include="Pregatire1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pregatire2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
