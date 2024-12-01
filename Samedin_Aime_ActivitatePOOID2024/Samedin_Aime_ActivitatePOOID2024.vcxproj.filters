@@ -21,5 +21,8 @@
     <ClCompile Include="Pregatire2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pregatire3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
