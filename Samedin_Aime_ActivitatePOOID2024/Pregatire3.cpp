@@ -28,6 +28,11 @@ public:
 		this->varsteLocuitori = varsteLocuitori;
 		
 	}
+	//destructor
+	~Casa() {
+		if (this->varsteLocuitori != NULL)
+			delete[]this->varsteLocuitori;
+	}
 	//constructor de copiere
 	Casa(const Casa& c):numar(c.numar) {
 		this->areEtaj = c.areEtaj;
@@ -107,3 +112,6 @@ int main() {
 	casa3 = casa1;
 	return 0;
 }
+
+
+
