@@ -40,7 +40,6 @@ public:
 		if (this != &e) {
 			if (this->nationalitate != NULL)
 				delete[]this->nationalitate;
-
 			this->viteza = e.viteza;
 			this->capacitate = e.capacitate;
 			this->allInclusive = e.allInclusive;
@@ -55,5 +54,28 @@ public:
 	void setViteza(float viteza) {
 		this->viteza = viteza;
 	}
+	Croaziera operator+(const Croaziera& p) {
+		Croaziera aux;
+		aux.viteza = this->viteza;
+		aux.capacitate = this->capacitate;
+		aux.allInclusive = this->allInclusive;
+		if (aux.nationalitate != NULL)
+			delete[]aux.nationalitate;
+		strcpy_s(aux.nationalitate, strlen(nationalitate) + 1, this->nationalitate);
+		return aux;
+	}
+
+
 
 };
+int main() {
+	Croaziera a1;
+	Croaziera a2 = a1;
+	Croaziera a3;
+	a3 = a1;
+	a3 + a1;
+	a1.setViteza(60);
+	cout << a1.getViteza() << endl;
+
+	return 0;
+}
