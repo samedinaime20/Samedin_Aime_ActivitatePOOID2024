@@ -18,7 +18,7 @@ public:
 	Croaziera(float viteza,
 		int capacitate,
 		char* nationalitate,
-		bool allInclusive) :idVapor(idVapor) {
+		bool allInclusive) :idVapor(26) {
 		this->allInclusive = allInclusive;
 		this->capacitate = capacitate;
 		this->viteza = viteza;
