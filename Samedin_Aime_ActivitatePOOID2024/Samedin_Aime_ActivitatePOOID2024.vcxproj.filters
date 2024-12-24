@@ -30,8 +30,5 @@
     <ClCompile Include="Pregatire5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Intalnire14.12.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

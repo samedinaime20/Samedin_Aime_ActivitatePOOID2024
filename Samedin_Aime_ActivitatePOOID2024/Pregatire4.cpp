@@ -55,3 +55,4 @@ public:
 	}
 	
 };
+string Clasa::nume = "Clasa 1A";

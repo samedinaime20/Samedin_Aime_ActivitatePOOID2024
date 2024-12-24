@@ -25,7 +25,7 @@ public:
 		this->nationalitate = nationalitate;
 	}
 	~Croaziera() {
-		if (this->nationalitate != NULL) {
+		if (this->nationalitate != nullptr) {
 			delete[]this->nationalitate;
 		}
 	}
@@ -61,13 +61,17 @@ public:
 		aux.allInclusive = this->allInclusive;
 		if (aux.nationalitate != NULL)
 			delete[]aux.nationalitate;
-		strcpy_s(aux.nationalitate, strlen(nationalitate) + 1, this->nationalitate);
+		if (this->nationalitate != NULL) {
+			aux.nationalitate=new char[strlen(nationalitate) + 1];
+			strcpy_s(aux.nationalitate, strlen(nationalitate) + 1, this->nationalitate);
+		}
 		return aux;
 	}
 
 
 
 };
+
 int main() {
 	Croaziera a1;
 	Croaziera a2 = a1;

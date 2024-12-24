@@ -127,7 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Intalnire14.12.cpp" />
     <ClCompile Include="Pregatire1.cpp" />
     <ClCompile Include="Pregatire2.cpp" />
     <ClCompile Include="Pregatire3.cpp" />

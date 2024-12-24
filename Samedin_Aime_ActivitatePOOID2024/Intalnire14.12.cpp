@@ -32,7 +32,7 @@ public:
 		char buffer[50];
 		in >> buffer;
 		och.brand = new char[strlen(buffer) + 1];
-		strcpy(och.brand, buffer);
+		strcpy_s(och.brand, strlen(buffer) + 1, buffer);
 	}
 	friend void operator<<(ostream& out, Ochelari ochelari) {
 		out << "PRET:" << ochelari.pret << endl;
